@@ -1,0 +1,47 @@
+requires
+1)accellarometer
+    -->for rotation
+2)geo caching
+    -->getting local location
+3)geo location
+    -->access location of user
+        -->use to locate nearby geo caches
+4)barcode scanning
+    -->barcode stickers
+5)uses files
+    -->???
+
+
+ideas
+-->barcodes scanned once(ever,per day)??
+-->potential problem(barcode vandalism)
+1)excersise app, scan barcode, run to next, measure time taken,get ditance
+    -->green scheme
+2)marclicker app, button for score, scan barcodes for multiplier,
+    -->market like colours
+3)treasure hunt maker
+    -->design and place caches, map location.
+        -->join up code??
+        -->use pre produced barcodes
+4)pirate tycoon
+    -->barcodes for multiplier
+        -->more barcodes located near coast
+    -->purchase auto clickers (pirates)
+
+idea going forward
+-->pirate clicker
+    -->crew and ships limiting factors
+        -->crew for speed
+        -->ships for amount in weight
+            -->ship number depends on crew size
+    -->cargo types different value and weight
+        -->limited time special cargo for scanning special locations
+    -->pirate battle other players???
+        -->gain ships defeated, lose ships lost
+            -->only gained if equal class or greater
+        -->flag ship in centre
+            -->flag ship can be upgraded for battles
+        -->defeat ship get next turn
+    -->upgrade shop
+        -->larger ship class(more hp,dmg,weight allowed)
+        -->other upgrades

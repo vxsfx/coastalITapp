@@ -1,0 +1,18 @@
+
+
+pirate tycoon
+    -->do functionality first
+        -->add button to increase crew count
+        -->add button to increase ship count
+        -->add button to increase test cargo
+                
+        -->add barcode scanner
+        -->add map view
+
+        -->add loop to increase score with cargo, ships and crew and multiplier
+
+    -->then add design
+        -->fade button if cant purchase
+        -->add images where necasary
+        -->add background
+    -->add any animatons

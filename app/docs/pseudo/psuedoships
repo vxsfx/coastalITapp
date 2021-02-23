@@ -1,0 +1,36 @@
+
+class fleet{
+    ///maybe construct it ???????????
+    private integer ships = 0
+    private string shipclass = "raft"
+
+    private void function buyship(){
+        ships += 1
+    }
+
+    private function getweight(shipclass){
+        switch(shipclass){
+            case "raft":
+                integer weigth = 10
+                return weight
+            case "gunboat":
+                interger weight = 20
+                return weight
+            case "frigate":
+                integer weight = 40
+                return weight
+            case "warship":
+                integer weight = 75
+                return weight
+            case"man o' war"
+                integer weight = 1000
+                return weight
+        }
+    }
+
+    private function totalweight(shipclass, ships){
+        integer weight = getweight(shipclass)
+        integer totalweight = weight * ships
+        return totalweight
+    }
+}
