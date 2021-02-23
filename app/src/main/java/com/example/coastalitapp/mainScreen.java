@@ -54,7 +54,7 @@ public class mainScreen extends Activity{
             }
         });
         //does not work on other class file ??????????????????????????????????????????????????????????????????????????
-        class itemType {
+        class itemButton {
             private int totalWeight;
             private int totalProfit;
 
@@ -63,7 +63,7 @@ public class mainScreen extends Activity{
             private String weightString;
 
 
-            itemType(int quantity, int weight, int cost, int profit,
+            itemButton(int quantity, int weight, int cost, int profit,
                      String weightText, String costText, String profitText, String buyText) {
 
                 //pass a class as argument instead
@@ -101,8 +101,12 @@ public class mainScreen extends Activity{
                 });
             }
         }
-        itemType rum = new itemType(0, 1, 1, 2, "weightRum", "costRum", "profitRum", "buyRum");
+
+        itemButton rumButton = new itemButton(0, 1, 1, 2, "weightRum", "costRum", "profitRum", "buyRum");
     }
+
+
+
 
 
         //swiper code
