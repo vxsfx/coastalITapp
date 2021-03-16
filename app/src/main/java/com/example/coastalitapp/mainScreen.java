@@ -55,8 +55,6 @@ public class mainScreen extends Activity{
         });
         //does not work on other class file ??????????????????????????????????????????????????????????????????????????
         class itemButton {
-            private int totalWeight;
-            private int totalProfit;
 
             private String costString;  //ignore may be final, may change in future with upgrades
             private String profitString;
@@ -94,7 +92,7 @@ public class mainScreen extends Activity{
                             profitString = Integer.toString(item.totalProfit);
                             profitEl.setText(profitString);
 
-                            weightString = Integer.toString(totalWeight);
+                            weightString = Integer.toString(item.totalWeight);
                             weightEl.setText(weightString);
                         }
                     }
