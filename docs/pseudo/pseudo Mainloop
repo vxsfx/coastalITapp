@@ -1,0 +1,39 @@
+class Main
+  set profit to 0
+  set weight to 0
+  set total to 0
+  set Multiplier to 1
+
+
+  Main() DO
+    set rum to itemClass
+    set gold to itemClass
+    
+    if saveHasData Do
+      data = getData()
+      set profit to data[0] 
+      set weight to data[1]
+      ...
+    End if
+    
+  End Main
+  
+  
+  Loop() Do
+    if second do
+      profit()
+    End if
+  End Loop
+  
+  
+  profit() Do
+    total += profit * Multiplier
+  end profit
+  
+  
+  onClose() Do
+    saveData()
+  End onClose
+
+End class Main
+  
