@@ -119,7 +119,7 @@ public class mainScreen extends Activity{
                 y2 = touchEvent.getY();
                 if (x1 < x2) {
 
-                    Intent intent = new Intent(mainScreen.this, camScreen.class);
+                    Intent intent = new Intent(mainScreen.this, mapScreen.class);
                     startActivity(intent);
 
                     finish();
