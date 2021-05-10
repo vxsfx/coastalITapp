@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoastalITapp">
         <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <meta-data
+            android:name="com.google.android.maps.geo.API_KEY"
+            android:value="@string/map_key"/>
+
+        <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="@string/map_key"
             />

@@ -1,0 +1,5 @@
+
+try:
+    location
+except:
+    failed to retreive location infomation
