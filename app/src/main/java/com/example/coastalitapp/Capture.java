@@ -1,8 +1,7 @@
 package com.example.coastalitapp;
 
-public class Capture {
+import com.journeyapps.barcodescanner.CaptureActivity;
 
-
-
+public class Capture extends CaptureActivity {
 
 }

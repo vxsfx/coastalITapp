@@ -1,15 +1,20 @@
 package com.example.coastalitapp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class camScreen extends AppCompatActivity {
 
@@ -28,12 +33,35 @@ public class camScreen extends AppCompatActivity {
             public void onClick(View view) {
                 IntentIntegrator intent = new IntentIntegrator(camScreen.this);
                 intent.setCaptureActivity(Capture.class);
+                intent.initiateScan();
             }
         });
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        Log.i("debugo_1", "45");
 
+        if(result.getContents() != null){
+            Log.i("debugo_2", "48");
+            AlertDialog.Builder builder = new AlertDialog.Builder(camScreen.this);
 
+            builder.setTitle("ahhhhhhhh");
+
+            builder.setPositiveButton("poo", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+        builder.show();
+        }else{
+            Log.i("you am here thing", "unusful msg");
+        }
+
+    }
 
     float x1,y1, x2, y2;
 

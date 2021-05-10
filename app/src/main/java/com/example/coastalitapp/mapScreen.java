@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,22 +44,33 @@ public class mapScreen extends AppCompatActivity {
 
 
         location = LocationServices.getFusedLocationProviderClient(this);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
+
+        Log.i("aaaaaaaaaaaaa", "cccccccccccccccccccccccccccc");
+
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
+            Log.i("debugorooo_1", "aaaa");
             getcurrentlocation();
         }
         else{
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 44);
+            Log.i("debug","else");
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
         }
     }
 
 
     public void getcurrentlocation(){
+        Log.i("12343dfsg", "sdfjhfdfd89");
         Task<Location> task = location.getLastLocation();
         task.addOnSuccessListener(new OnSuccessListener<Location>(){
            @Override
            public void onSuccess(Location location_){
+               Log.i("checking", "check");
+
+               //not worky????
                if (location_!=null){
+                   Log.i("checke", "valid");
                    mapFragment.getMapAsync(new OnMapReadyCallback(){
                    @Override
                    public void onMapReady(GoogleMap googleMap){
@@ -65,7 +78,7 @@ public class mapScreen extends AppCompatActivity {
                        LatLng latlng = new LatLng(location_.getLatitude(), location_.getLongitude());
 
                        //here be the stuffs
-                       MarkerOptions options = new MarkerOptions().position(latlng).title("YOU AM HERE");
+                        MarkerOptions options = new MarkerOptions().position(latlng).title("YOU AM HERE");
 
                         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 10));
                         googleMap.addMarker(options);
@@ -80,6 +93,7 @@ public class mapScreen extends AppCompatActivity {
         if (requestCode == 44){
             //might move &&
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                Log.i("aaaaaaaaaaaa", "bbbbbbbbbbbbbbbbbbbb");
                 getcurrentlocation();
             }
         }
