@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <!--
-    <view
-        android:id="@+id/viewId"
-        android:layout_width="1000dp"
-        android:layout_height="1000dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
--->
-    <Button
-        android:id="@+id/change"
-        android:text="@+string/camscreen"
-        android:layout_width="89dp"
-        android:layout_height="44dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+
+
     <TextView
         android:id="@+id/totalScans"
         android:text="scans:"
@@ -195,4 +178,4 @@
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

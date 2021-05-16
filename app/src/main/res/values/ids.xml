@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="totalRum" type="id" />
+    <item name="totalweightRum" type="id" />
+    <item name="totalspeedCrew" type="id" />
+    <item name="speedCrew" type="id" />
+    <item name="muliplier" type="id" />
+    <item name="multiplier" type="id" />
+    <item name="total" type="id" />
+</resources>

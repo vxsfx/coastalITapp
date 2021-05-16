@@ -7,6 +7,8 @@ import android.app.Activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.hardware.SensorEvent;
 import android.os.Bundle;
 
 import android.util.Log;
@@ -62,11 +64,11 @@ public class mainScreen extends Activity{
 
 
             itemButton(int quantity, int weight, int cost, int profit,
-                     String weightText, String costText, String profitText, String buyText) {
+                       String weightText, String costText, String profitText, String buyText) {
 
                 //pass a class as argument instead
 
-
+                //change to load from mainloop where item = mainloop.get(itemname)->passed from args above
                 itemClass item = new itemClass(quantity, weight, cost, profit);
                 //part that wont work elsewhere
                 final int weightId = getResources().getIdentifier(weightText, "id", getPackageName());
@@ -101,12 +103,21 @@ public class mainScreen extends Activity{
         }
 
         itemButton rumButton = new itemButton(0, 1, 1, 2, "weightRum", "costRum", "profitRum", "buyRum");
+        //may need relative layout
+
+        int rotation = getResources().getConfiguration().orientation;
+
+        if (rotation == Configuration.ORIENTATION_PORTRAIT){
+            Log.i("orientated port","portariat");
+        }
+        else{
+            Log.i("orientation", "landscape");
+        }
+
+
+
+
     }
-
-
-
-
-
         //swiper code
         float x1,y1, x2, y2;
 
