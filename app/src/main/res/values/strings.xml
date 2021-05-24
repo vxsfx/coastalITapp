@@ -4,7 +4,6 @@
     <string name="ships">Ships</string>
     <string name="rum" />
     <string name="_0">0</string>
-    <string name="_0">0</string>
     <string name="speed">speed:1</string>
     <string name="speedcrew">speed:1</string>
     <string name="costcrew">£1000</string>
@@ -16,7 +15,6 @@
     <string name="_1_X" />
     <string name="_£0">_£0</string>
     <string name="£0">£0</string>
-    <string name="TOTAL">TOTAL</string>
     <string name="TOTAL">TOTAL</string>
     <string name="totalweight">TOTALWEIGHT</string>
     <string name="RUM">RUM</string>
