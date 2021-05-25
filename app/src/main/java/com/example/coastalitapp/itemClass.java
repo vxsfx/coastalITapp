@@ -2,26 +2,21 @@ package com.example.coastalitapp;
 
 public class itemClass {
     //can add values to button class
-        protected int quantity;
-        private int weight;
+        public String name;
 
-        protected int totalWeight;
-        protected int cost;
+        public int cost;
 
-        private int profit;
-        protected int totalProfit;
+        public int weight;
 
-    public itemClass(int itemQuantity ,int itemWeight, int itemCost, int itemProfit){   //need to load user save items for method arguments
-        quantity = itemQuantity;
+        public int total;
+
+        public int profit;
+
+    public itemClass(String name, int itemQuantity ,int itemWeight, int itemCost, int itemProfit){   //need to load user save items for method arguments
+        total = itemQuantity;
         weight = itemWeight;
         cost = itemCost;
         profit = itemProfit;
-        Calculate();
-    }
-
-    protected void Calculate(){
-        totalProfit = profit * quantity;
-        totalWeight = weight * quantity;
     }
 }
 

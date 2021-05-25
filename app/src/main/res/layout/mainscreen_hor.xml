@@ -10,7 +10,7 @@
     <TextView
         android:id="@id/multiplier"
 
-        android:text="@string/_1X"
+        android:text="@string/mult"
 
         android:layout_width="100dp"
         android:layout_height="44dp"
@@ -24,7 +24,7 @@
     <TextView
         android:id="@id/total"
 
-        android:text="@string/£0"
+        android:text="@string/totalprof"
 
         android:layout_width="100dp"
         android:layout_height="44dp"
@@ -86,18 +86,6 @@
         app:layout_constraintBottom_toTopOf="@id/totalCrew"
         />
 
-    <Button
-        android:id="@+id/buycrew"
-        android:text="@string/crew"
-
-        android:layout_width="100dp"
-        android:layout_height="44dp"
-
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="140dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/buycrew"
         android:text="@string/crew"
@@ -235,4 +223,4 @@
 
         app:layout_constraintStart_toEndOf="@id/totalRum"
         app:layout_constraintTop_toTopOf="@id/totalRum" />
-</>
+</androidx.constraintlayout.widget.ConstraintLayout>

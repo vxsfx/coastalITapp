@@ -11,10 +11,10 @@
     <string name="weightrum">w:10</string>
     <string name="buy">BUY</string>
     <string name="BUY">BUY</string>
-    <string name="_1X">1X</string>
-    <string name="_1_X" />
-    <string name="_£0">_£0</string>
-    <string name="£0">£0</string>
+    <string name="_1_X">1X</string>
+    <string name="mult">1X</string>
+    <string name="totalprof">£0</string>
+
     <string name="TOTAL">TOTAL</string>
     <string name="totalweight">TOTALWEIGHT</string>
     <string name="RUM">RUM</string>
