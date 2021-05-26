@@ -5,6 +5,7 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationListener;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -26,7 +27,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 
 
-public class mapScreen extends AppCompatActivity {
+public class mapScreen extends AppCompatActivity implements LocationListener {
 
     public FusedLocationProviderClient location;
     //    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
@@ -59,6 +60,11 @@ public class mapScreen extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onLocationChanged(@NonNull Location location) {
+        Log.i("jkfdshhhhhhhhhhhhhhh", "kjhdlsssssssssssssssssssssssssssssssssssssssssssssssssssssf");
+        getcurrentlocation();
+    }
 
     public void getcurrentlocation(){
         Log.i("12343dfsg", "sdfjhfdfd89");

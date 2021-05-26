@@ -50,9 +50,10 @@ public class mainloop{
     //runny bit, should runs on launch     unknown how to get atts from otherclass while this runs      cannot reload info may lessen performance
     public static void main(String[] args) {
         //start loopy
+        Log.i("mmmmmaaaaaaaaiiinnn","mainclass");
         fileclass test = new fileclass();
         test.save(items);
-
+        while(true){Log.i("runn", "running");}
         //items = test.load(items)
     }
 

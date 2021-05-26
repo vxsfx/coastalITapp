@@ -67,9 +67,9 @@ public class mainScreen extends Activity{
                        String weightText, String costText, String profitText, String buyText) {
 
                 //pass a class as argument instead
-
+/*
                 //change to load from mainloop where item = mainloop.get(itemname)->passed from args above
-                itemClass item = new itemClass(quantity, weight, cost, profit);
+                itemClass item = new itemClass("rum", quantity, weight, cost, profit);
                 //part that wont work elsewhere
                 final int weightId = getResources().getIdentifier(weightText, "id", getPackageName());
                 final int costId = getResources().getIdentifier(costText, "id", getPackageName());
@@ -81,13 +81,13 @@ public class mainScreen extends Activity{
 
                 costString = Integer.toString(cost);
                 costEl.setText(costString);
-
+*/
                 final int buyId = getResources().getIdentifier(buyText, "id", getPackageName());
                 final Button BuyEl = findViewById(buyId);
                 BuyEl.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
                         if (points >= cost) {
-                            points -= item.cost;
+                      /*      points -= item.cost;
                             item.quantity++;
                             item.Calculate();
 
@@ -95,7 +95,7 @@ public class mainScreen extends Activity{
                             profitEl.setText(profitString);
 
                             weightString = Integer.toString(item.totalWeight);
-                            weightEl.setText(weightString);
+                            weightEl.setText(weightString);*/
                         }
                     }
                 });
